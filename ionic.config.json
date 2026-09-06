@@ -1,0 +1,7 @@
+{
+  "name": "clase2-05-empty-buscar",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

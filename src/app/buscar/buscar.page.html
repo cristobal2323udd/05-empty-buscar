@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Buscar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    @for (p of resultados; track p.id) {
+      <ion-item>
+        <ion-label>{{ p.nombre }}</ion-label>
+      </ion-item>
+    } @empty {
+      <div class="estado-vacio">
+        <ion-icon name="search-outline"></ion-icon>
+        <p>Sin resultados</p>
+      </div>
+    }
+  </ion-list>
+</ion-content>
